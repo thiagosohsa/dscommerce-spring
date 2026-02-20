@@ -18,7 +18,6 @@ public class Order {
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
      private Instant moment;
 
-    @Enumerated(EnumType.STRING) // <-- Melhora leitura no banco
      private OrderStatus status;
 
      @ManyToOne
